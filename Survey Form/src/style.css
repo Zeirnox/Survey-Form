@@ -28,18 +28,25 @@ body {
 #survey-form{
     text-align: left;
     padding: 50px;
-    background-color: rgba(137, 43, 226, 0.6);
+    background-color: rgba(137, 43, 226, 0.5);
 }
 #title {
     text-align: center;
     font-family: roboto-med, Arial, Helvetica, sans-serif;
-    font-size: 48px;
+    font-size: 60px;
 }
 #description {
     text-align: center;
     font-family: roboto-light, Arial, Helvetica, sans-serif;
     font-size: 24px;
     margin-top: -1em;
+}
+#note {
+    text-align: center;
+}
+.form-group {
+    font-size: 30px;
+    font-family: roboto-light, Arial, Helvetica, sans-serif;
 }
 .inputbox {
    width: 100%;
@@ -48,15 +55,30 @@ body {
    margin-bottom: 15px;
    opacity: 0.85;
 }
-.labels {
-    font-size: 24px;
-    font-family: roboto-light, Arial, Helvetica, sans-serif;
+.rate-form {
+    margin: 5px 5px 15px 15px;
+    min-width: 1.2rem;
+    min-height: 1.2rem;
+}
+.checkboxcontainer {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.check-form {
+    margin: 5px 5px 15px 15px;
+    min-width: 1.2rem;
+    min-height: 1.2rem;
 }
 .dropdown {
-    width: 80%;
+    width: 20%;
+    height: 2em;
+    margin-bottom: 15px;
 }
 #textarea {
     width: 100%;
+}
+.comment{
+    font-family: roboto-thin, Arial, Helvetica, sans-serif;
+    font-size: 20px;
 }
 #submit {
     width: 100%;
@@ -66,10 +88,11 @@ body {
     color: rgb(255, 255, 255);
     font-family: roboto-med, Arial, Helvetica, sans-serif;
 }
-@media screen {
-    body {
-        background-image: url(/img/background.jpg);
-        background-repeat: no-repeat;
-        background-position: fixed;
+
+@media only screen and (max-width: 800px) {
+    #main {
+        margin: 25px;
+        padding: 20px;
     }
+
 }

@@ -11,25 +11,26 @@
 <header>
   <h1 id="title">James Liu's Survey Form</h1>
   <p id="description">Thank you for taking the time to give me feedback</p>
+  <p id="note"><b>Note: this form does not send data anywhere</b></p>
 </header>
 
 <main id="main">
   <form action="" method="GET" id="survey-form">
-    <div>
+    <div class="form-group">
       <label id="name-label" class="labels">Name</label>
       <input id="name" placeholder="Enter your name" type="text" class="inputbox" required></input>
     </div>
-    <div>
+    <div class="form-group">
       <label id="email-label" class="labels">Email</label>
       <input id="email" placeholder="Enter your email" type="email" class="inputbox">
     </div>
-    <div>
-      <label id="number-label" class="labels">Age </label><span>(optional)</span>
+    <div class="form-group">
+      <label id="number-label" class="labels">Age </label><span class="comment">(optional)</span>
       <input id="number" placeholder="age" type="number" min="1" max="200" class="inputbox">
     </div>
-    <div>
-      <label id="dropdown-label" class="labels">Where did you find this page?</label>
-      <select id="dropdown" type="dropdown">
+    <div class="form-group">
+      <label id="dropdown-label" class="labels">Where did you find this page?</label><br>
+      <select id="dropdown" type="dropdown" class="dropdown">
         <option value=""> </option>
         <option value="application">Application</option>
         <option value="linkedin">LinkedIn</option>
@@ -37,26 +38,26 @@
         <option value="other">Other</option>
       </select>
     </div>
-    <div>
-      <label id="rate-form" class="labels">How would you rate this page?</label><br>
-      <input id="great" type="radio" name="rateform" value="great">Great
-      <input id="good" type="radio" name="rateform" value="good">Good
-      <input id="average" type="radio" name="rateform" value="average">Average
-      <input id="needswork" type="radio" name="rateform" value="needswork">Needs Work
-      <input id="bad" type="radio" name="rateform" value="bad">Bad
+    <div class="form-group">
+      <label id="rate-form" class="labels" >How would you rate this page?</label><br>
+      <input class="rate-form" type="radio" name="rateform" value="great">Great
+      <input class="rate-form" type="radio" name="rateform" value="good">Good
+      <input class="rate-form" type="radio" name="rateform" value="average">Average
+      <input class="rate-form" type="radio" name="rateform" value="needswork">Needs Work
+      <input class="rate-form" type="radio" name="rateform" value="bad">Bad
       <br>
     </div>
-    <div>
-      <label id="check" class="labels">What elements needs work?</label><span>(check all that apply)</span><br>
-      <input id="formatting" type="checkbox" value="formatting">Formatting
-      <input id="visual" type="checkbox" value="visual">Visual Design
-      <input id="navigation" type="checkbox" value="navigation">Navigation
-      <input id="interation" type="checkbox" value="interation">Interation
-      <input id="accessibility" type="checkbox" value="accessibility">Accessibility
-      <input id="intuitive" type="checkbox" value="intuitive">Intuitiveness
-      <input id="backend" type="checkbox" value="backend">Backend
+    <div class="form-group">
+      <label id="check" class="checkboxcontainer">What elements needs work?</label><span class="comment"> (check all that apply)</span><br>
+      <input class="check-form" type="checkbox" value="formatting">Formatting<br>
+      <input class="check-form" type="checkbox" value="visual">Visual Design<br>
+      <input class="check-form" type="checkbox" value="navigation">Navigation<br>
+      <input class="check-form" type="checkbox" value="interation">Interation<br>
+      <input class="check-form" type="checkbox" value="accessibility">Accessibility<br>
+      <input class="check-form" type="checkbox" value="intuitive">Intuitiveness<br>
+      <input class="check-form" type="checkbox" value="backend">Backend<br>
     </div>
-    <div>
+    <div class="form-group">
       <label id="textarea" class="labels">Any comments of suggestions?</label><br>
       <textarea id="textarea" rows="10" cols="70"></textarea>
     </div>
