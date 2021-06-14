@@ -1,18 +1,18 @@
 @font-face {
     font-family: roboto-med;
-    src: url(/RobotoFont/Roboto-Medium.ttf);
+    src: url(fonts/Roboto-Medium.ttf);
 }
 @font-face {
     font-family: roboto-light;
-    src: url(/RobotoFont/Roboto-Light.ttf);
+    src: url(fonts/Roboto-Light.ttf);
 }
 @font-face {
     font-family: roboto-thin;
-    src: url(/RobotoFont/Roboto-Thin.ttf);
+    src: url(fonts/Roboto-Thin.ttf);
 }
 body {
     color: aliceblue;
-    background-image: url(/img/background.jpg);
+    background-image: url(img/background.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
