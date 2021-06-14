@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Survey Page</title>
+  <link rel="stylesheet" href="" />
+</head>
+
+<header>
+  <h1 id="title">James Liu's Survey Form</h1>
+  <p id="description">Thank you for taking the time to give me feedback</p>
+</header>
+
+<main>
+  <form action="" method="GET" id="survey-form">
+    <div>
+      <label id="name-label">Name</label>
+      <input id="name" placeholder="Enter your name" type="text" required></input>
+    </div>
+    <div>
+      <label id="email-label">Email</label>
+      <input id="email" placeholder="Enter your email" type="email">
+    </div>
+    <div>
+      <label id="number-label">Age (optional)</label>
+      <input id="number" placeholder="age" type="number" min="1" max="200">
+    </div>
+    <div>
+      <label id="dropdown-label">Where did you find this page?</label>
+      <select id="dropdown" type="dropdown">
+        <option value=""> </option>
+        <option value="application">Application</option>
+        <option value="linkedin">LinkedIn</option>
+        <option value="ziprecruiter">ZipRecruiter</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+    <div>
+      <label id="rate-form">How would you rate this page?</label><br>
+      <input id="great" type="radio" name="rateform" value="great">Great
+      <input id="good" type="radio" name="rateform" value="good">Good
+      <input id="average" type="radio" name="rateform" value="average">Average
+      <input id="needswork" type="radio" name="rateform" value="needswork">Needs Work
+      <input id="bad" type="radio" name="rateform" value="bad">Bad
+      <br>
+    </div>
+    <div>
+      <label id="check">What elements needs work? (check all that apply)</label><br>
+      <input id="formatting" type="checkbox" value="formatting">Formatting
+      <input id="visual" type="checkbox" value="visual">Visual Design
+      <input id="navigation" type="checkbox" value="navigation">Navigation
+      <input id="interation" type="checkbox" value="interation">Interation
+      <input id="accessibility" type="checkbox" value="accessibility">Accessibility
+      <input id="intuitive" type="checkbox" value="intuitive">Intuitiveness
+      <input id="backend" type="checkbox" value="backend">Backend
+    </div>
+    <div>
+      <label id="textarea">Any comments of suggestions?</label><br>
+      <textarea id="textarea" rows="10" cols="70"></textarea>
+    </div>
+    <button id="submit">Submit</button>
+  </form>
+</main>
+
+<footer></footer>
+
+</html>
