@@ -1,0 +1,98 @@
+@font-face {
+    font-family: roboto-med;
+    src: url(/RobotoFont/Roboto-Medium.ttf);
+}
+@font-face {
+    font-family: roboto-light;
+    src: url(/RobotoFont/Roboto-Light.ttf);
+}
+@font-face {
+    font-family: roboto-thin;
+    src: url(/RobotoFont/Roboto-Thin.ttf);
+}
+body {
+    color: aliceblue;
+    background-image: url(/img/background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#main {
+    font-family: roboto-med, Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    padding: 80px;
+    margin: -60px 15em 50px 15em;
+    padding-bottom: 50px;   
+}
+#survey-form{
+    text-align: left;
+    padding: 50px;
+    background-color: rgba(137, 43, 226, 0.5);
+}
+#title {
+    text-align: center;
+    font-family: roboto-med, Arial, Helvetica, sans-serif;
+    font-size: 60px;
+}
+#description {
+    text-align: center;
+    font-family: roboto-light, Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    margin-top: -1em;
+}
+#note {
+    text-align: center;
+}
+.form-group {
+    font-size: 30px;
+    font-family: roboto-light, Arial, Helvetica, sans-serif;
+}
+.inputbox {
+   width: 100%;
+   height: 1.5em;
+   display: block;
+   margin-bottom: 15px;
+   opacity: 0.85;
+}
+.rate-form {
+    margin: 5px 5px 15px 15px;
+    min-width: 1.2rem;
+    min-height: 1.2rem;
+}
+.checkboxcontainer {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.check-form {
+    margin: 5px 5px 15px 15px;
+    min-width: 1.2rem;
+    min-height: 1.2rem;
+}
+.dropdown {
+    width: 20%;
+    height: 2em;
+    margin-bottom: 15px;
+}
+#textarea {
+    width: 100%;
+}
+.comment{
+    font-family: roboto-thin, Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+#submit {
+    width: 100%;
+    padding: 5px;
+    margin-top: 20px;
+    background-color:rgba(68, 161, 223, 0.8);
+    color: rgb(255, 255, 255);
+    font-family: roboto-med, Arial, Helvetica, sans-serif;
+}
+
+@media only screen and (max-width: 800px) {
+    #main {
+        margin: 25px;
+        padding: 20px;
+    }
+
+}
