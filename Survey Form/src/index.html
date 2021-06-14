@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/Survey Form/src/style.css" />
   <title>Survey Page</title>
-  <link rel="stylesheet" href="" />
 </head>
 
 <header>
@@ -13,22 +13,22 @@
   <p id="description">Thank you for taking the time to give me feedback</p>
 </header>
 
-<main>
+<main id="main">
   <form action="" method="GET" id="survey-form">
     <div>
-      <label id="name-label">Name</label>
-      <input id="name" placeholder="Enter your name" type="text" required></input>
+      <label id="name-label" class="labels">Name</label>
+      <input id="name" placeholder="Enter your name" type="text" class="inputbox" required></input>
     </div>
     <div>
-      <label id="email-label">Email</label>
-      <input id="email" placeholder="Enter your email" type="email">
+      <label id="email-label" class="labels">Email</label>
+      <input id="email" placeholder="Enter your email" type="email" class="inputbox">
     </div>
     <div>
-      <label id="number-label">Age (optional)</label>
-      <input id="number" placeholder="age" type="number" min="1" max="200">
+      <label id="number-label" class="labels">Age </label><span>(optional)</span>
+      <input id="number" placeholder="age" type="number" min="1" max="200" class="inputbox">
     </div>
     <div>
-      <label id="dropdown-label">Where did you find this page?</label>
+      <label id="dropdown-label" class="labels">Where did you find this page?</label>
       <select id="dropdown" type="dropdown">
         <option value=""> </option>
         <option value="application">Application</option>
@@ -38,7 +38,7 @@
       </select>
     </div>
     <div>
-      <label id="rate-form">How would you rate this page?</label><br>
+      <label id="rate-form" class="labels">How would you rate this page?</label><br>
       <input id="great" type="radio" name="rateform" value="great">Great
       <input id="good" type="radio" name="rateform" value="good">Good
       <input id="average" type="radio" name="rateform" value="average">Average
@@ -47,7 +47,7 @@
       <br>
     </div>
     <div>
-      <label id="check">What elements needs work? (check all that apply)</label><br>
+      <label id="check" class="labels">What elements needs work?</label><span>(check all that apply)</span><br>
       <input id="formatting" type="checkbox" value="formatting">Formatting
       <input id="visual" type="checkbox" value="visual">Visual Design
       <input id="navigation" type="checkbox" value="navigation">Navigation
@@ -57,10 +57,10 @@
       <input id="backend" type="checkbox" value="backend">Backend
     </div>
     <div>
-      <label id="textarea">Any comments of suggestions?</label><br>
+      <label id="textarea" class="labels">Any comments of suggestions?</label><br>
       <textarea id="textarea" rows="10" cols="70"></textarea>
     </div>
-    <button id="submit">Submit</button>
+    <button id="submit"><b>Submit</b></button>
   </form>
 </main>
 
