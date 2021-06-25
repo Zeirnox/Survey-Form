@@ -21,9 +21,9 @@ body {
 #main {
     font-family: roboto-med, Arial, Helvetica, sans-serif;
     font-size: 1em;
-    padding: 80px;
-    margin: -60px 15em 50px 15em;
-    padding-bottom: 50px;   
+    padding-bottom: 50px;
+    width: 80%;
+    margin: auto;
 }
 #survey-form{
     text-align: left;
@@ -55,8 +55,11 @@ body {
    margin-bottom: 15px;
    opacity: 0.85;
 }
+#rate-form {
+    display: flex;
+}
 .rate-form {
-    margin: 5px 5px 15px 15px;
+    margin: 10px 5px 0px 15px;
     min-width: 1.2rem;
     min-height: 1.2rem;
 }
@@ -69,7 +72,7 @@ body {
     min-height: 1.2rem;
 }
 .dropdown {
-    width: 20%;
+    min-width: 20%;
     height: 2em;
     margin-bottom: 15px;
 }
@@ -89,10 +92,3 @@ body {
     font-family: roboto-med, Arial, Helvetica, sans-serif;
 }
 
-@media only screen and (max-width: 1200px) {
-    #main {
-        margin: 25px;
-        padding: 20px;
-    }
-
-}
